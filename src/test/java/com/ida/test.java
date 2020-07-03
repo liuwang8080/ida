@@ -3,9 +3,7 @@ package com.ida;
 public class test {
 
     public static class MyRunnbale implements Runnable{
-
         ThreadLocal<String> THREADLOCAL=new ThreadLocal<>();
-
         @Override
         public void run() {
             THREADLOCAL.set("Math.random()="+Math.random());
